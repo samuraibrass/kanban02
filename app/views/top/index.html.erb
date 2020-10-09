@@ -1,2 +1,11 @@
-<p>ここはトップページです</p>
-<%= link_to "仮のボタンです", "#", class: "btn btn-primary" %>
+<div class="topPage">
+<div class="listWrapper">
+<% @lists.each do |list| %>
+<div class="list">
+  <div class="list_header">
+    <h2 class="list_header_title"><%= list.title %></h2><!-- /.list_header_title -->
+  </div><!-- /.list_header -->
+</div><!-- /.list -->
+<% end %>
+</div><!-- /.listWrapper -->
+</div><!-- /.topPage -->
